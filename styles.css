@@ -8,7 +8,7 @@ body,html {
 }
 .row {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(16, 1fr);
     grid-gap: 0;
     background-color: #2196F3;
 }
