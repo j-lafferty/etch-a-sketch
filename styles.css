@@ -10,11 +10,10 @@ body,html {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 0;
-    background-color: #2196F3;
 }
 .gridsquare {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(83, 125, 92, 0.6);
+    border: 1px solid rgba(4, 32, 4, 0.8);
     padding: 1em;
     font-size: 30px;
     text-align: center;
