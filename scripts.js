@@ -1,6 +1,6 @@
 
 function genDivs (v) {
-    let e = document.querySelector('#container');
+    let e = document.querySelector('#gameboard');
 
     //create rows within the only div written in html page
     for (let i = 0; i < v; i++) {
@@ -21,7 +21,7 @@ function genDivs (v) {
     //document.getElementById("container").innerText = e.innerHTML;
 };
 
-var mouse = document.getElementById("container");
+var mouse = document.getElementById("gameboard");
 
 mouse.addEventListener("mouseover", function( e ) {   
     // highlight the mouseover target
