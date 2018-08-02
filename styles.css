@@ -9,22 +9,18 @@ body, html {
     font-family: sans-serif;
 }
 #container {
-    width: 45rem;
-    height: 45rem;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 60px;
+    height: 350px;
+    width: 350px;
 }
 #gameboard {
-    height: 100%;
-    width: 100%;
     display: flex;
 }
-.row {
-    flex: auto;
-}
+
 .gridsquare {
     background-color: rgba(83, 125, 92, 0.6);
     border: 1px solid rgba(4, 32, 4, 0.8);
     padding: 1rem;
-    margin: 0;
-    font-size: 30px;
-    text-align: center;
 }
