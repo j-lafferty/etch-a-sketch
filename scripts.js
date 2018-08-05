@@ -45,6 +45,9 @@ resetButton.addEventListener("click", () => {
     gridSize = prompt("Enter grid size:");
     if (gridSize === null) {
         return;
+    } else if (gridSize < 2 || gridSize > 64) {
+        alert("Enter value between 2 and 64:");
+        return;
     };
     refreshGrid();
 });
