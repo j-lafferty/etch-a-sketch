@@ -1,10 +1,13 @@
 let gameBoard = document.querySelector('#gameboard');
 var mouse = document.getElementById("gameboard");
+var resetButton = document.querySelector("#reset");
 
 var gridLines = "";
 var gridSquares = "";
 
-function genDivs (v) {
+var gridSize = 16;
+
+function createGrid (v) {
 
     //create rows within the 'gameboard' div in html page
     for (let i = 0; i < v; i++) {
@@ -33,10 +36,27 @@ mouse.addEventListener("mouseover", function( e ) {
     e.target.style.backgroundColor = "#EEB127";
 
     // reset the color after a short delay
-    setTimeout(function() {
+    /* setTimeout(function() {
       e.target.style.backgroundColor = "";
-    }, 1000);
+    }, 1000); */
   }, false);
 
+resetButton.addEventListener("click", () => {
+    gridSize = prompt("Enter grid size:");
+    refreshGrid();
+});
 
-genDivs(16);
+function buildGrid() {
+    if (gridSquares) {
+        refreshGrid();
+    };
+    createGrid(gridSize);
+};
+
+function refreshGrid () {
+    gridLines.forEach((line) => {
+        gameBoard.removeChild(line);
+    });
+};
+
+createGrid(gridSize);

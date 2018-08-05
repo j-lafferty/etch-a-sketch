@@ -48,3 +48,42 @@
 .gridSquare:last-child {
     border-right: 1px solid #cccccc;
 }
+#reset {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 100%;
+    align-self: center;
+    bottom: 2.25vh;
+    background-color: #ffffff;
+    box-shadow: .3vh .3vh .5vh .3vh rgba(0, 0, 0, 0.342);
+}
+#reset img {
+    position: absolute; 
+    height: 5vh;
+    width: 5vh;
+    opacity: .8;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#reset:active {
+    height: 4.7vh;
+    width: 4.7vh;
+    background-color: #dfdfdf;
+}
+#reset img:active {
+    height: 4.7vh;
+    width: 4.7vh;
+    opacity: .8;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
