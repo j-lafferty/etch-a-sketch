@@ -1,26 +1,49 @@
 * {
-    margin: 0;
-    padding: 0;    
+    box-sizing: border-box;
 }
-html {
-    font-size: 10px;
-}
-body, html {
-    font-family: sans-serif;
+
+#main {
+    height: 100vh;
+    background-color: #3F0E00;
+    display: flex;
 }
 #container {
+    position: relative;
+    height: 70vh;
+    width: 64vh;
     margin-left: auto; 
     margin-right: auto;
     margin-top: 60px;
-    height: 350px;
-    width: 350px;
+    display: flex;
+    flex-flow: column;
+    background-color: #8D2203;
+    border-radius: 5vh;
+    box-shadow: .8vh .8vh 1vh .8vh rgba(0, 0, 0, 0.342);
 }
 #gameboard {
+    position: relative;
+    margin: auto;
+    height: 50vh;;
+    width: 50vh;
+    background-color: black;
     display: flex;
+    flex-flow: column;
+}
+.row {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    border-top: 1px solid #cccccc;
+}
+.row:last-child {
+    border-bottom: 1px solid #cccccc;
 }
 
-.gridsquare {
-    background-color: rgba(83, 125, 92, 0.6);
-    border: 1px solid rgba(4, 32, 4, 0.8);
-    padding: 1rem;
+.gridSquare {
+    flex-grow: 1;
+    border-left: 1px solid #cccccc;
+    background-color: rgba(255, 255, 255, 1);
+}
+.gridSquare:last-child {
+    border-right: 1px solid #cccccc;
 }
