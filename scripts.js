@@ -43,6 +43,9 @@ mouse.addEventListener("mouseover", function( e ) {
 
 resetButton.addEventListener("click", () => {
     gridSize = prompt("Enter grid size:");
+    if (gridSize === null) {
+        return;
+    };
     refreshGrid();
 });
 

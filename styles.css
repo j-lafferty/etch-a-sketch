@@ -18,7 +18,7 @@
     display: flex;
     flex-flow: column;
     background-color: rgb(158, 42, 10);
-    border-radius: 5vh;
+    border-radius: 3vh;
     box-shadow: .8vh .8vh 1vh .8vh rgba(0, 0, 0, 0.342);
 }
 #gameboard {
