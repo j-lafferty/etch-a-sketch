@@ -46,14 +46,14 @@ resetButton.addEventListener("click", () => {
     refreshGrid();
 });
 
-function buildGrid() {
+function refreshGrid() {
     if (gridSquares) {
-        refreshGrid();
+        removeGrid();
     };
     createGrid(gridSize);
 };
 
-function refreshGrid () {
+function removeGrid () {
     gridLines.forEach((line) => {
         gameBoard.removeChild(line);
     });
